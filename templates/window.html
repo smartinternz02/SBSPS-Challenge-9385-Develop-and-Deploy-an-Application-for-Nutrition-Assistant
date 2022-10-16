@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition_Assistant</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:400,700'>
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+    <div class="windows">
+        <form action="{{ url_for('window') }}" method="POST">
+            <h1>What are the nutrition value present in your food just type to know.</h1>
+            <div class="foodname">
+                <h2>Food name :</h2>
+                <input type="text" class="food-name" name="foodname">
+                <button class="button-search" type="submit">Search</button>
+            </div><br>
+            <div class="imagesearch">
+                <input type="file" accept="image/*" class="request-image" id="image" name="image">
+                <input class="btn btn-outline-primary" type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

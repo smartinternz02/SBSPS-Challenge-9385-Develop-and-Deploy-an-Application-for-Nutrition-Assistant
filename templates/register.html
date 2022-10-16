@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register-from</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:400,700'>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+  <div class="Register-form">
+    <form action="{{ url_for('register') }}" method="POST">
+      <h3>Hey there,<br>
+        We were happy that you've taken the first step towards a healthier you.we need a few steps to kickstart your
+        journey.</h3>
+      <div class="content">
+        <div class="input-field">
+          <label for="usernane">Username</label></br>
+          <input type="username" name="username" autocomplete="nope"><br>
+        </div>
+        <div class="input-field">
+          <label for="password">Password</label><br>
+          <input type="password" name="pass" autocomplete="new-password"><br>
+        </div>
+
+        <div class="ques">
+          <form>
+            <label for="city">Where your are from</label><br>
+            <input type="text" id="city" name="city"><br><br>
+
+            <label for="gender">What's your biological sex?</label><br>
+            <div class="radio">
+              <input type="radio" name="gender" id="gender" value="Male">Male <br>
+              <input type="radio" name="gender" id="gender" value="Female">Female <br><br>
+            </div>
+            <label for="age">What's your age</label><br>
+            <input type="age" name="age" id="age"><br><br>
+
+            <label for="activity">How active are you?<br>Based on your lifestyle, we can access your daily calorie
+              requirements.</label><br><br>
+            <input type="radio" name="activity" value="Little or No Activity">
+            <label for="Little">Little or No Activity</label><br>
+            <input type="radio" name="activity" value="Lightly Active">
+            <label for="Little">Lightly Active</label><br>
+            <input type="radio" name="activity" value="Moderately Active">
+            <label for="Little">Moderately Active</label><br>
+            <input type="radio" name="activity" value="Very Active">
+            <label for="Little">Very active</label><br><br>
+
+            <label for="height">How tall are you?</label><br>
+            <input type="number" min="120" max="243" name="height"><br><br>
+
+            <label for="weight">What's your current weight</label><br>
+            <input type="number" min="40" max="250" name="weight"><br><br>
+
+            <h3>{{your_bmi}} </h3>
+
+            <label for="Weight_loss">What's your target weight</label><br>
+            <input type="number" min="40" max="200" name="Weight_loss" id="Weight_loss"><br><br>
+
+            <label for="goal">How fast do you want to reach your goal?</label><br><br>
+            <input type="radio" id="goal" name="goal" value="0.25kg">
+            <label for="goal">0.25kg</label><br>
+            <input type="radio" id="goal" name="goal" value="0.5kg">
+            <label for="goal">0.5kg</label><br>
+            <input type="radio" id="goal" name="goal" value="0.75kg">
+            <label for="goal">0.75kg</label><br>
+            <input type="radio" id="goal" name="goal" value="1kg">
+            <label for="goal">1kg</label><br>
+
+          </form>
+        </div>
+
+        <div class="action">
+          <button type="submit">Register</button>
+
+        </div>
+      </div>
+    </form>
+</body>
+
+</html>

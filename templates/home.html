@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Assistant | Home</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:400,700'>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="hero">
+        <nav>
+            <img src="/static/assests/logo.png" class="logo">
+            <ul>
+                <li><a href="#"></a>Home</li>
+                <li><a href="#"></a>About</li>
+                <li><a href="#"></a>Service</li>
+                <li><a href="#"></a>Contact</li>
+            </ul>
+        </nav>
+    </div>
+    <section class="about">
+        <div class="info">
+            <h2>Unleash your better version</h2>
+            <p>Struggling in your weightloss</p>
+            <a href="{{ url_for('login') }}">Login</a>
+            <a href="{{ url_for('register') }}">Register</a>
+        </div>
+
+        <div class="img3">
+            <img src="/static/assests/figure3.jpg">
+        </div>
+
+        <div class="img-box">
+            <img src="/static/assests/figure.png" class="main-img">
+        </div>
+
+        <section class="blkscr">
+            <div class="img2">
+                <img src="/static/assests/figure2.jpeg">
+            </div>
+            <div class="img-workout">
+                <img src="/static/assests/workout2.jpeg" class="workout">
+            </div>
+            <div class="diet-per">
+                <p><strong style="font-size: 130%;">80%</strong> &ensp; <small
+                        style="font-size: 20px;">Nutrition</small>
+            </div>
+            <div class="exe-per">
+                <p><strong style="font-size: 130%;">20%</strong> &ensp;<small style="font-size: 20px;">Exercise</small>
+                </p>
+            </div>
+            <div class="quotes">
+                <h1>Eat good <br> Move more</h1>
+            </div>
+        </section>
+
+
+
+    </section>
+</body>
+
+</html>
